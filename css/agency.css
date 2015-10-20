@@ -269,6 +269,11 @@ header .intro-text .intro-heading {
     margin-bottom: 50px;
   }
 }
+.team-member img:hover,
+.team-member img:focus,
+.team-member img:active{
+   border: 2px solid #3abeff;
+}
 section {
   padding: 100px 0;
 }
