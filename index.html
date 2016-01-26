@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head itemscope itemtype="http://schema.org/WebSite">
     <!--view port scaling-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--SEO properties-->
-    <title>AUV SAMUDRA AIACT&amp;R- Most Economical Auv by undergraduate students </title>
+    <title itemprop="name">AUV SAMUDRA AIACT &amp; R- Most Economical Auv by undergraduate students </title>
     <meta name="keywords" content="SAMUDRA, AUV, AIACT&R, NIOT, SAVe, ATLAB, SUBMARINE ">
     <meta name="description" content="SAMUDRA abbreviated as SYSTEM OF AUTONOMOUS MARINE UNDERWATER DETECTION RESEARCH & ACTIVITIES is the most economical Autonomous Underwater Vehicle (AUV) developed by a team of undergraduate students from AIACT &amp;R (formerly Ambedkar Institute of Technology) to compete in the AUVSI. Although in the journey we have participated in national competition such as NIOT SAVe and GRIDTECH and bagged first prize overall in GRIDTECH 2015. ">
-    <meta name="author" content="Abhishek Jain">
+    <meta itemprop="author" content="Abhishek Jain">
+    <meta itemprop="url" content="http://auvsamudra.in/">
     <!--open graph meta tags-->
-    <meta property="og:title" content=AUV SAMUDRA AIACT&R- Most Economical Auv by undergraduate students/>
+    <meta property="og:site_name" content="auv samudra"/>
+    <meta property="og:title" content="AUV SAMUDRA AIACT&R- Most Economical Auv by undergraduate students"/>
     <meta property="og:type" content="website"/>
+    <meta property="fb:app_id" content="218912381777827" /> 
     <meta property="og:url" content="http://auvsamudra.in"/>
-    <meta property="og:description" content="SAMUDRA abbreviated as SYSTEM OF AUTONOMOUS MARINE UNDERWATER DETECTION RESEARCH &amp; 	ACTIVITIES is the most economical Autonomous Underwater Vehicle (AUV) developed by a team of undergraduate students from AIACT 	&amp;R (formerly Ambedkar Institute of Technology) to compete in the AUVSI. Although in the journey we have participated in 	national competition such as NIOT SAVe and GRIDTECH and bagged first prize overall in GRIDTECH 2015. "/>
+    <meta property="og:description" content="SAMUDRA abbreviated as SYSTEM OF AUTONOMOUS MARINE UNDERWATER DETECTION RESEARCH &amp; ACTIVITIES is the most economical Autonomous Underwater Vehicle (AUV) developed by a team of undergraduate students from AIACT &amp;R (formerly Ambedkar Institute of Technology) to compete in the AUVSI. Although in the journey we have participated in national competition such as NIOT SAVe and GRIDTECH and bagged first prize overall in GRIDTECH 2015. "/>
+    <!--cards meta tags-->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:url" content="http://auvsamudra.in">
     <meta name="twitter:title" content=SAMUDRA/>
@@ -27,7 +31,10 @@
     <link href="css/modern-business.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
-
+    <!--Add HTML5 support for earlier -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![end if]-->
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -47,8 +54,8 @@
 <body id="page-top" class="index">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" style="background-color:black;">
-        <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -57,17 +64,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">SAMUDRA</a>
+                <div itemprop="logo" itemscope itemtype="http://schema.org/brand"><a class="navbar-brand page-scroll" href="#page-top">SAMUDRA</a></div>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav ">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Home</a>
+                        <a class="page-scroll" href="#home">Home</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">About</a>
@@ -137,7 +144,7 @@
     </header>
 
     <!-- home Section -->
-    <section id="services">
+    <section id="home">
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-4">
@@ -204,7 +211,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading ">SAMUDRA abbreviated as SYSTEM OF AUTONOMOUS MARINE UNDERWATER DETECTION RESEARCH &amp; ACTIVITIES is an Autonomous Underwater Vehicle (AUV) developed by a team of undergraduate students from AIACTR (formerly Ambedkar Institute of Technology) to compete in the AUVSI. SAMUDRA is based on the principle low cost and high efficiency.</h3>
+                    <h3 class="section-subheading text-muted">SAMUDRA abbreviated as SYSTEM OF AUTONOMOUS MARINE UNDERWATER DETECTION RESEARCH &amp; ACTIVITIES is an Autonomous Underwater Vehicle (AUV) developed by a team of undergraduate students from AIACTR (formerly Ambedkar Institute of Technology) to compete in the AUVSI. SAMUDRA is based on the principle low cost and high efficiency.</h3>
                 </div>
             </div>
             <div class="row">
@@ -230,7 +237,7 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>May 2011</h4>
+                                    <h4><time datetime="2011-05">May 2011</time></h4>
                                     <h4 class="subheading">First AUV Challenge</h4>
                                 </div>
                                 <div class="timeline-body">
@@ -244,7 +251,7 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>April 2012</h4>
+                                    <h4><time datetime="2012-04">April 2012</time></h4>
                                     <h4 class="subheading">SAVe 2012</h4>
                                 </div>
                                 <div class="timeline-body">
@@ -258,13 +265,13 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>February 2014</h4>
+                                    <h4><time datetime="2014-02">February 2014</time></h4>
                                     <h4 class="subheading">SAVe 2014</h4>
                                 </div>
-                                <div class="timeline-body">
+                                <div class="timeline-body"><!--make a list-->
                                     <p class="text-muted">SAVe 2014 announcement was made in
                                         NIOT’s website and through leading National Newspapers. After submission of Preliminary Design documents by 14 teams Out of 27 registeration only five teams are allowed to demonstrate their AUV</p>
-                                    <ul class="text-muted">
+                                    <ul>
                                          <li>Delhi Technology University.</li> 
                                          <li>SRM University chennai.</li>
                                          <li>Ambedkar Institute of Advanced communication Technologies &amp; Research.</li>
@@ -281,7 +288,7 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>january 2015</h4>
+                                    <h4><time datetime="2015-01">january 2015</time></h4>
                                     <h4 class="subheading">SAVe 2015</h4>
                                 </div>
                                 <div class="timeline-body">
@@ -293,12 +300,12 @@
                             <div class="timeline-image">
                                 <h4>Current 
                                     <br>scenario of
-                                    <br>Team</h4>
+                                    <br>Present Team</h4>
                             </div>
                             <div class="timeline-panel">
                             <div class="timeline-body">
                                     <p class="text-muted">We did a team expansion this time. The whole system has been divided into five departments 
-                                    <ul class="text-muted">
+                                    <ul>
                                     <li>Mechanical.</li>
                                     <li>Image Processing.</li>
                                     <li>Embedded-Control System.</li>
@@ -321,7 +328,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Achievements</h2>
-                    <h3 class="section-subheading">This is what we achieved in the journey towards our prime objective to win in AUVSI AUV competition.</h3>
+                    <h3 class="section-subheading text-muted">This is what we achieved in the journey towards our prime objective to win in AUVSI AUV competition.</h3>
                 </div>
             </div>
             <div class="row">
@@ -334,7 +341,7 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>GRIDTECH </h4>
-                                    <h4 class="subheading">April 2015</h4>
+                                    <h4 class="subheading"><time datetime="2015-04">April 2015</time></h4>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">POWERGRID with the support of Ministry of Power and in association with CBIP and IEEMA is bringing its 5th International Exhibition and Conference GRIDTECH 2015 from 8th to 10th April 2015 at ITPO, Pragati Maidan, New Delhi on new technologies in Transmission, Distribution etc. We bagged first prize over there by presenting a working modal of an Autonomous Underwater Vehicle which was displayed in detection of faults in the underwater transmission links.</p>
@@ -365,7 +372,7 @@
                                     <h4 class="subheading">Former CM</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted ">The team SAMUDRA was invited by Delhi Government to present their prototype and technology used thereafter praised by Former chief minister of Delhi Mrs Sheila Dixit during the presentation and demonstration of the project at Indian International Trade Fair 2013.</p>
+                                    <p class="text-muted">The team SAMUDRA was invited by Delhi Government to present their prototype and technology used thereafter praised by Former chief minister of Delhi Mrs Sheila Dixit during the presentation and demonstration of the project at Indian International Trade Fair 2013.</p>
                                 </div>
                             </div>
                         </li>
@@ -392,16 +399,16 @@
                                 </div>
                                 <!--make a list according according to college prority-->
                                 <div class="timeline-body">
-                                    <p class="text-muted text-justify">Won several technical paper presentation during the annual technical fest of</p>
-                                    <ul class="text-muted text-justify">
-		                            <li>Indian Institute of Technology Delhi</li>
-		                            <li>Indira Gandhi Institute of Technology</li>
-		                            <li>Institute of Informatics and Communication</li>
-		                            <li>Maharaja Agrasen Institute of Technology</li>
-		                            <li>Maharaja Surajmal Institute of Technology</li>
-		                            <li>Bharati Vidyapeeth's College of Engineering</li>
-		                    </ul>
-				 </div>
+                                    <p class="text-muted">Won several technical paper presentation during the annual technical fest of</p>
+                                </div>
+                                <ul>
+                                    <li>Indian Institute of Technology Delhi</li>
+                                    <li>Indira Gandhi Institute of Technology</li>
+                                    <li>Institute of Informatics and Communication</li>
+                                    <li>Maharaja Agrasen Institute of Technology</li>
+                                    <li>Maharaja Surajmal Institute of Technology</li>
+                                    <li>Bharati Vidyapeeth's College of Engineering</li>
+                                </ul>
                            </div>
                         </li>
                      </ul>
@@ -411,53 +418,35 @@
     </section>
     <!--Sponsorship-->
     <section id="Sponsorship" class="bg-light-gray">
-     <div class="container">
-    	<h2 class="section-heading text-center">Sponsors</h2>
-    	<div class="row">
-                <div class="col-sm-4">
-                    
-                </div>
-                <div class="col-sm-4 text-center">
-                  <img src="img/logo/8.png" class="img-responsive img-rounded" alt="">
-                  <a href="http://www.bluerobotics.com/" target="_blank"><strong>BLUE ROBOTICS</strong></a>
-                </div>
-                <div class="col-sm-4">
-                   
-                </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                    <H2 class="text-center">Sponsorship Benefits</H2>
-                    <h3 class="section-subheading">Although SAMUDRA is based on the principle low cost and high efficiency, however a 					comprehensive amount of capital investment is required to build highly intelligent robots which works 					on itself hence the help and support from corporate sector is indispensable for our endeavour, 					therefore its our privilege to offer following benefits for the recognition of the support. </h3>
-                         <ul class="sponbene">
-			   <div class="sponlist">
-                            <li>Your Company logo will be displayed on the auv, Team T-shirt or other apparels and will be 					prominently displayed on the project website.</li>
-			  </div>
-                          <div class="sponlist">
+     <div class="container text-center">
+    	<h2 class="section-heading ">Sponsors</h2>
+            <div class="row">
+                    <div class="col-sm-4">
+                        
+                    </div>
+                    <div class="col-sm-4">
+                      <img src="img/logo/8.png" class="img-responsive img-centered img-rounded" alt="">
+                      <a href="http://www.bluerobotics.com/" target="_blank"><strong>BLUE ROBOTICS</strong></a>
+                    </div>
+                    <div class="col-sm-4">
+                       
+                    </div>
+            </div>
+            <div class="row">
+                 <h2>Sponsorship Benefits</h2>
+                 <h3 class="section-subheading">Although SAMUDRA is based on the principle low cost and high efficiency, however a comprehensive amount of capital investment is required to build highly intelligent robots which works on itself hence the help and support from corporate sector is indispensable for our endeavour, therefore its our privilege to offer following benefits for the recognition of the support. </h3>
+                         <ul class="benefit-list">
+                            <li>Your Company logo will be displayed on the auv, Team T-shirt or other apparels and will be prominently displayed on the project website.</li>
                             <li>Branding alongside with major corporate companies at NIOT during SAVe-2016</li>
-                           </div>
-			   <div class="sponlist">
-                             <li>Display of company name and logo in the next presentation of SAMUDRA in coming Gridtech challenge 					and Indian International Trade Fair at pragati maidan.</li>
-			   </div>	                         
-			   <div class="sponlist">
-                             <li>Mentioning of Company in the future interviews of SAMUDRA.</li> 
-                           </div>
-			   <div class="sponlist">
-                             <li>Display of company name and logo in the SAMUDRA pamphlets and AIACTR annual college magazine.</li>
-                           </div>
-			   <div class="sponlist">
-                             <li>Announcement of the company at the technical presentation of SAMUDRA in various technical fests 				     across different colleges in Delhi.</li>
-                           </div>
-			   <div class="sponlist">
+                            <li>Display of company name and logo in the next presentation of SAMUDRA in coming Gridtech challenge and Indian International Trade Fair at pragati maidan.</li>
+                            <li>Mentioning of Company in the future interviews of SAMUDRA.</li> 
+                            <li>Display of company name and logo in the SAMUDRA pamphlets and AIACTR annual college magazine.</li>
+                            <li>Announcement of the company at the technical presentation of SAMUDRA in various technical fests across different colleges in Delhi.</li>
                             <li>Announcement of company at college technical and cultural fest presentation.</li>
-                           </div>
-			   <div class="sponlist">
-                             <li>Team members and AUV is made available for our sponsors when they required.</li>
-                           </div>
+                            <li>Team members and AUV is made available for our sponsors when they required.</li>
                          </ul>           
-           </div>
-        </div>
-        </div>
+            </div>
+      </div>
         </section>
     <!-- Team Section -->
     <section id="team">
@@ -865,7 +854,7 @@
            <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">AUV SAMUDRA RECRUITMENT</h2>
-                    <h3 class="section-subheading">Our team is made up of a group of multidisciplinary undergraduates . We design , build and test an Autonomous Underwater Vehicle each year with an aim to participate in AUVSI's Robosub competition in San Diego.our team has bagged the 5th International Exhibition and Conference- GRIDTECH 2015 which was organized by the POWERGRID with the support of Ministry of Power and in association with CBIP and IEEMA at Pragati Maidan, New Delhi. We have received support and encouragement both from the Government of India and leading firms in the industry.</h3>
+                    <h3 class="section-subheading text-muted">Our team is made up of a group of multidisciplinary undergraduates . We design , build and test an Autonomous Underwater Vehicle each year with an aim to participate in AUVSI's Robosub competition in San Diego.our team has bagged the 5th International Exhibition and Conference- GRIDTECH 2015 which was organized by the POWERGRID with the support of Ministry of Power and in association with CBIP and IEEMA at Pragati Maidan, New Delhi. We have received support and encouragement both from the Government of India and leading firms in the industry.</h3>
                 </div>
             </div>
             <div class="row">
@@ -945,11 +934,10 @@
     </footer>
 
     <!-- jQuery -->
-   <script src="js/jquery.js"></script>
-
+    <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
+   
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
