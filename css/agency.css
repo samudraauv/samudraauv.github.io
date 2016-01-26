@@ -190,7 +190,6 @@ fieldset[disabled] .btn-xl.active {
   color: white;
   background-color: #3abeff;
 }
-
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: white;
@@ -211,8 +210,8 @@ border:2px solid #4bb5ea;
 margin-top:5px;
 box-shadow:5px 10px 5px #888888;
 }
-.item{
-    margin-top:10px;
+.carousel-inner>.item {
+	margin-top:70px;
 }
 /* desktop style*/
 @media only screen and (min-width:768px){
