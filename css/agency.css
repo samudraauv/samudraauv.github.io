@@ -50,6 +50,10 @@ h6 {
 .bg-darkest-gray {
   background-color: #222222;
 }
+.navbar-nav{
+      float:right;
+      font-size:1em;
+    }
 .btn-primary {
   color: white;
   background-color: #3abeff;
@@ -172,7 +176,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 200;
   letter-spacing: 1px;
   color: white;
 }
@@ -186,12 +190,32 @@ fieldset[disabled] .btn-xl.active {
   color: white;
   background-color: #3abeff;
 }
+
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: white;
   background-color: #07adff;
 }
-@media (min-width: 768px) {
+ul.benefit-list{
+list-style-type:none;
+text-align:center;
+margin: 0px auto;
+}
+ul.benefit-list li {
+font-weight:800;
+line-height:50px;
+text-shadow: 1px 1px #2e2e05;
+font-size:18px;
+background-color:#3abeff;
+border:2px solid #4bb5ea;
+margin-top:5px;
+box-shadow:5px 10px 5px #888888;
+}
+.item{
+    margin-top:10px;
+}
+/* desktop style*/
+@media only screen and (min-width:768px){
   .navbar-default {
     background-color: transparent;
     padding: 25px 0;
@@ -199,7 +223,14 @@ fieldset[disabled] .btn-xl.active {
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
     border: none;
-  }
+    }
+  .navbar-nav {
+    font-size: .85em;
+    -webkit-transition: font-size 0.3s;
+    -moz-transition: font-size 0.3s;
+    transition: font-size 0.3s;
+    }
+  
   .navbar-default .navbar-brand {
     font-size: 2em;
     -webkit-transition: all 0.3s;
@@ -211,7 +242,8 @@ fieldset[disabled] .btn-xl.active {
   }
   .navbar-default {
     background-color: #222222;
-    padding: 10px 0;   
+    padding: 10px 0;
+    font-size: 1em;   
   }
   .navbar-default .navbar-brand {
     font-size: 1.5em;
@@ -248,24 +280,7 @@ header .intro-text .intro-heading {
   line-height: 50px;
   margin-bottom: 15px;
 }
-ul.sponbene{
-list-style-type:none;
-text-align:center;
-}
-ul.sponbene li {
-font-weight:800;
-line-height:40px;
-text-shadow: 1px 1px #2e2ea5;
-font-size:18px;
-}
-.sponlist{
-background-color:#3abeff;
-border:2px solid #4bb5ea;
-margin-top:5px;
-box-shadow:10px 10px 5px #888888;
-}
- 
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   header .intro-text {
     padding-top: 300px;
     padding-bottom: 200px;
@@ -318,7 +333,7 @@ section h3.section-subheading {
   font-weight: 400;
   margin-bottom: 75px;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   section {
     padding: 150px 0;
   }
@@ -423,7 +438,7 @@ section h3.section-subheading {
 .timeline .timeline-body > ul {
   margin-bottom: 0;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .timeline:before {
     left: 50%;
   }
@@ -454,7 +469,7 @@ section h3.section-subheading {
     padding: 0 30px 20px 20px;
   }
 }
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   .timeline > li {
     min-height: 150px;
   }
@@ -475,7 +490,7 @@ section h3.section-subheading {
     padding: 0 20px 20px;
   }
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .timeline > li {
     min-height: 170px;
   }
@@ -614,20 +629,6 @@ ul.social-buttons li a:active {
   outline: none;
 }
 
-::-moz-selection {
-  text-shadow: none;
-  background: #3abeff;
-}
-::selection {
-  text-shadow: none;
-  background: #3abeff;
-}
-img::selection {
-  background: transparent;
-}
-img::-moz-selection {
-  background: transparent;
-}
 body {
   webkit-tap-highlight-color: #3abeff;
 }
