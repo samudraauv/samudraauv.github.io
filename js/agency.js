@@ -13,7 +13,13 @@ $(function() {
         event.preventDefault();
     });
 });
-
+$(function(){
+	$('.carousel').carousel({
+		interval:6000,
+		pause:false,
+		keyboard:false
+	});
+});
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
     target: '.navbar-fixed-top'
