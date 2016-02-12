@@ -12,6 +12,22 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+    $('#header').hide();
+    var scrollHeight= $('#myCarousel').height();
+    var navbarHeight= $('#header').height();
+    if(window.innerWidth< 768){
+       var scrollHeight=600; 
+    }
+    $(window).scroll(function() {
+    var currentScroll = $(this).scrollTop();
+    console.log(currentScroll + " and " + " and "+ scrollHeight);
+    if(currentScroll > scrollHeight) {
+           $('#header').show();  
+    } else{
+           $('#header').hide();
+    }
+    
+    });
 });
 $(function(){
 	$('.carousel').carousel({

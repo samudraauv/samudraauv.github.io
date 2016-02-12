@@ -200,20 +200,31 @@ list-style-type:none;
 text-align:center;
 margin: 0px auto;
 }
-ul.benefit-list li {
+ul.benefit-list li{
 font-weight:800;
 line-height:50px;
-text-shadow: 1px 1px #2e2e05;
 font-size:18px;
-background-color:#3abeff;
-border:2px solid #4bb5ea;
 margin-top:5px;
 box-shadow:5px 10px 5px #888888;
 }
-.carousel-inner>.item {
-	margin-top:70px;
+ul.benefit-list li:hover {
+text-shadow: 1px 1px #2e2e05;
+background-color:#3abeff;
+border:2px solid #4bb5ea;
+box-shadow:5px 10px 5px #888888;
 }
-/* desktop style*/
+.carousel-inner>.item{
+    height:600px;
+    }
+.carousel-inner>.item img{
+    height:100%;
+    width:100%;
+}
+/*.carousel-inner>.item{
+    height:900px;
+}*/
+
+ /*desktop style*/
 @media only screen and (min-width:768px){
   .navbar-default {
     background-color: transparent;
@@ -239,6 +250,13 @@ box-shadow:5px 10px 5px #888888;
   .navbar-default .navbar-nav > .active > a {
     border-radius: 3px;
   }
+  .carousel-inner>.item{
+    height:900px;
+    }
+    .carousel-inner>.item img{
+    height:100%;
+    width:100%;
+    }
   .navbar-default {
     background-color: #222222;
     padding: 10px 0;
@@ -528,13 +546,13 @@ aside.clients img {
   margin: 50px auto;
 }
 section#contact {
-  background-color: #222222;
-  background-image: url('../img/map-image.png');
+  background-image: url('../img/map-image.jpg');
   background-position: center;
+  background-size:cover;
   background-repeat: no-repeat;
 }
 section#contact .section-heading {
-  color: white;
+  color: black;
 }
 section#contact .form-group {
   margin-bottom: 25px;
